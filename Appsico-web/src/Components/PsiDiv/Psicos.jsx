@@ -7,9 +7,9 @@ const Data = [
   {
     id: 1,
     /*image: logo1, Aqui é aonde a imagem vai parar*/
-    title: 'Humanista',
+    title: 'Lorem ipsum',
     time: 'TCC',
-    location: 'São Paulo',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
@@ -17,9 +17,9 @@ const Data = [
   {
     id: 2,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
@@ -27,9 +27,9 @@ const Data = [
   {
     id: 3,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
@@ -37,9 +37,9 @@ const Data = [
   {
     id: 4,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
@@ -47,9 +47,9 @@ const Data = [
   {
     id: 5,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
@@ -57,9 +57,9 @@ const Data = [
   {
     id: 6,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },  
@@ -67,9 +67,9 @@ const Data = [
   {
     id: 7,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },  
@@ -77,9 +77,9 @@ const Data = [
   {
     id: 8,
     /*image: logo1,*/
-    title: 'Comportamental',
-    time: 'TCC',
-    location: 'São Paulo',
+    title: 'Lorem ipsum',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   }  
@@ -114,7 +114,7 @@ const Psicos = () => {
                     <span className='text-[14px] py-[1rem] block group-hover:text-white'>{company}</span>
                   </div>
                   <button className='border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] 
-                  font-semibold text-textColor hover:bg-white group-hover/item:text-textColor group-hover:text-white'>
+                  font-semibold text-textColor hover:bg-blueColor group-hover/item:text-textColor group-hover:text-white'>
                     Saiba mais
                   </button>
                   </div>

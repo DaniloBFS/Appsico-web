@@ -8,14 +8,13 @@ const Value = () => {
         O valor de uma mente bem cuidada!
       </h1>
 
-      <div className='grid gap-[10rem] grid-cols-3 items-center'>
-       
+      <div className='flex  flex-row items-center max-w-xs'>
+        
         <div className='singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]'>
           <div className='flex items-center gap-3'>
             <div className='imgDiv p-[4px] rounded-[.8rem] bg-[#dedef8] h-[40px] w-[40px] flex items-center justify-center'>
               <img src={simple} alt="" className='w-[70%]' />
             </div>
-
             <span className='font-semibold text-textColor text-[18px]'>
               Acolhimento
             </span>
@@ -32,7 +31,6 @@ const Value = () => {
             <div className='imgDiv p-[4px] rounded-[.8rem] bg-[#dedef8] h-[40px] w-[40px] flex items-center justify-center'>
               <img src={simple} alt="" className='w-[70%]' />
             </div>
-
             <span className='font-semibold text-textColor text-[18px]'>
               Acolhimento
             </span>
@@ -49,7 +47,6 @@ const Value = () => {
             <div className='imgDiv p-[4px] rounded-[.8rem] bg-[#dedef8] h-[40px] w-[40px] flex items-center justify-center'>
               <img src={simple} alt="" className='w-[70%]' />
             </div>
-
             <span className='font-semibold text-textColor text-[18px]'>
               Acolhimento
             </span>
@@ -62,7 +59,7 @@ const Value = () => {
         </div>
 
       </div>
-
+      
       <div className="card mt-[2rem] flex justify-between bg-blueColor p-[5rem] rounded-[10px]">
 
         <div>
@@ -70,9 +67,9 @@ const Value = () => {
           <h2 className='text-textColor text-[25px] font-bold'>Vamos começar!</h2>
         </div>
           
-          <button className='border-[2px] rounded-[10px] py-[4px] px-[50px] text-[18px] font-semibold text-blueColor hover:bg-white border-blueColor'>
+        <button className='border-[2px] rounded-[10px] py-[4px] px-[50px] text-[18px] font-semibold text-blueColor hover:bg-white border-blueColor'>
             Comece Agora
-          </button>
+        </button>
         
       </div>
     </div>
