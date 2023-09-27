@@ -55,7 +55,6 @@ export default function NavBar() {
                 Psicólogos
               </Link>
               </li>
-             
             </ul>
           </div>
         </section>
