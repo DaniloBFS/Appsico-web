@@ -8,7 +8,7 @@ const Value = () => {
         O valor de uma mente bem cuidada!
       </h1>
 
-      <div className='flex  flex-row items-center max-w-xs'>
+      <div className='flex flex-row items-center max-w-xs'>
         
         <div className='singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]'>
           <div className='flex items-center gap-3'>

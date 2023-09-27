@@ -89,7 +89,7 @@ const Data = [
 const Psicos = () => {
   return (
     <div>
-      <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10">
+      <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10 mx-8">
         
 
        {
