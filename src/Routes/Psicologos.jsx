@@ -1,6 +1,7 @@
 import React from 'react'
 import Search from '../Components/SearchDiv/Search.jsx'
-import Psicos from '../Components/PsiDiv/Psicos.jsx'
+import Especialidade from '../Components/EspecialidadeDiv/Especialidade.jsx'
+
 
 const Psicologos = () => {
   return (
@@ -8,7 +9,7 @@ const Psicologos = () => {
      
 
       <Search />
-      <Psicos />
+      <Especialidade />
 
 
     </div>

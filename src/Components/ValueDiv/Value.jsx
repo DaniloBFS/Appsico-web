@@ -4,7 +4,7 @@ import simple from '../../Assets/simple.png'
 const Value = () => {
   return (
     <div className='mb-[4rem] mt-[6rem]'>
-      <h1 className='text-textColor text-[25px] py-[2rem] pb-[3rem] font-bold w-[400px] block'>
+      <h1 className='text-textColor text-[25px] py-[2rem] pb-[3rem] font-bold w-[400px] flex  max-w-fit'>
         O valor de uma mente bem cuidada!
       </h1>
 
@@ -60,7 +60,7 @@ const Value = () => {
 
       </div>
       
-      <div className="card mt-[2rem] flex flex-wrap justify-between bg-blueColor p-[5rem] rounded-[10px]">
+      <div className="card mt-[2rem] flex flex-wrap justify-between bg-blueColor p-[3rem] rounded-[10px]">
 
         <div>
           <h1 className='text-blueColor text-[30px] font-bold'>Pronto para escolher um Psicólogo?</h1>

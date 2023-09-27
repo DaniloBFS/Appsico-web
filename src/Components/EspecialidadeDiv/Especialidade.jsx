@@ -33,10 +33,97 @@ const Data = [
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
     company: 'Clinica Especialista Co.'
   },
+  {
+    id: 1,
+    /*image: logo1, Aqui é aonde a imagem vai parar*/
+    title: 'Convênio',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 2,
+    /*image: logo1,*/
+    title: 'Particular',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 3,
+    /*image: logo1,*/
+    title: 'Social',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  {
+    id: 1,
+    /*image: logo1, Aqui é aonde a imagem vai parar*/
+    title: 'Convênio',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 2,
+    /*image: logo1,*/
+    title: 'Particular',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 3,
+    /*image: logo1,*/
+    title: 'Social',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  {
+    id: 1,
+    /*image: logo1, Aqui é aonde a imagem vai parar*/
+    title: 'Convênio',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 2,
+    /*image: logo1,*/
+    title: 'Particular',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
+  
+  {
+    id: 3,
+    /*image: logo1,*/
+    title: 'Social',
+    time: 'Lorem',
+    location: 'Lorem ipsum',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum adipisci deleniti.',
+    company: 'Clinica Especialista Co.'
+  },
   
 ]
 
-const Psicos = () => {
+const Especialidade = () => {
   return (
     <div>
       <div className="jobContainer flex gap-12 justify-center flex-wrap items-center py-10 mx-8">
@@ -79,5 +166,5 @@ const Psicos = () => {
 }
 
 
-export default Psicos
+export default Especialidade
 
