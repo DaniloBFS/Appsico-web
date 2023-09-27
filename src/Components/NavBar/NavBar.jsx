@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react"; // import state
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -45,28 +46,32 @@ export default function NavBar() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="../../psicologos.jsx">Psicólogos</a>
+              <Link to="/">
+                Home
+              </Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Convênios</a>
+              <Link to="/Psicologos">
+                Psicólogos
+              </Link>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Login</a>
-              </li>
+             
             </ul>
           </div>
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="../../psicologos.jsx">Psicólogos</a>
+          <Link to="/">
+            Home
+          </Link>
           </li>
           <li>
-            <a href="/portfolio">Convênios</a>
+          <Link to="/Psicologos">
+            Psicólogos
+          </Link>
           </li>
-          <li>
-            <a href="/contact">Login</a>
-          </li>
+          
         </ul>
       </nav>
     </div>

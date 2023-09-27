@@ -8,7 +8,7 @@ const Value = () => {
         O valor de uma mente bem cuidada!
       </h1>
 
-      <div className='flex flex-row items-center max-w-xs'>
+      <div className='flex flex-wrap flex-row items-center'>
         
         <div className='singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]'>
           <div className='flex items-center gap-3'>
@@ -22,7 +22,7 @@ const Value = () => {
           <p className='text-[13px] text-textColor opacity-[.7] py-[1rem]'>
             Acolhimento é um dos mais importantes aspectos da mente. É o que
             acontece quando a mente está em um estado de acordo com o seu
-            comportamento.
+            comportamento. 
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const Value = () => {
 
       </div>
       
-      <div className="card mt-[2rem] flex justify-between bg-blueColor p-[5rem] rounded-[10px]">
+      <div className="card mt-[2rem] flex flex-wrap justify-between bg-blueColor p-[5rem] rounded-[10px]">
 
         <div>
           <h1 className='text-blueColor text-[30px] font-bold'>Pronto para escolher um Psicólogo?</h1>
