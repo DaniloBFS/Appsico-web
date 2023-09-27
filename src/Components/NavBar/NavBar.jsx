@@ -45,7 +45,7 @@ export default function NavBar() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">Psicólogos</a>
+                <a href="../../psicologos.jsx">Psicólogos</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/portfolio">Convênios</a>
@@ -59,7 +59,7 @@ export default function NavBar() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="/about">Psicólogos</a>
+            <a href="../../psicologos.jsx">Psicólogos</a>
           </li>
           <li>
             <a href="/portfolio">Convênios</a>

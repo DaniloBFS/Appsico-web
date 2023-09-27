@@ -1,9 +1,9 @@
 import React from 'react';
 
-const psicologos = () => {
+const Psicologos = () => {
     return(
         <div>oi</div>
     )
 }
 
-export default psicologos;
+export default Psicologos;
