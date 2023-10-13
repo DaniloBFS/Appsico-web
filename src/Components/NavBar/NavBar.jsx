@@ -55,6 +55,17 @@ export default function NavBar() {
                 Psicólogos
               </Link>
               </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+              <Link to="/Login">
+                Login
+              </Link>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+              <Link to="/Registro">
+                Registre-se
+              </Link>
+              </li>
+              
             </ul>
           </div>
         </section>
@@ -69,6 +80,16 @@ export default function NavBar() {
           <Link to="/Psicologos">
             Psicólogos
           </Link>
+          </li>
+          <li>
+            <Link to="/Login">
+             Login
+            </Link>
+          </li>
+          <li>
+            <Link to="/Registro">
+             Registre-se
+            </Link>
           </li>
           
         </ul>
