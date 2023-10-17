@@ -3,7 +3,7 @@ import Form from "../Components/FormLogin/FormLogin.jsx";
 
 const Login = () => {
     return (
-       <div className="flex w-full h-screen" >
+       <div className="flex w-full h-screen my-12">
             <div className="w-full flex items-center justify-center lg:w-1/2">
                 <Form />
             </div>

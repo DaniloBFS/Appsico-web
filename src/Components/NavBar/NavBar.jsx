@@ -8,8 +8,8 @@ export default function NavBar() {
   return (
     <div className="navBar flex justify-between items-center p-[2rem] mb-[1rem]">
       <a href="/">
-        <div className="logoDiv">
-          <h1 className="logo text-[25px] text-blueColor">
+        <div className="logoDiv ">
+          <h1 className="logo text-[25px] text-blueColor ">
             <strong>App</strong>sico
             </h1>
         </div>

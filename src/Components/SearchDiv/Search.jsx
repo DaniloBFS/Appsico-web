@@ -4,7 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 const Search = () => {
   return (
 
-    <div className='searchDiv grid bg-greyIsh rounded-[10px] p-[2rem]'>
+    <div className='searchDiv grid bg-greyIsh rounded-[10px] p-[2rem] py-12 my-12'>
           <form action="" className=''>
             <div className='firstDiv flex justify-between items-center rounded-[18px] gap[10px] bg-white p-4 shadow-lg shadow-greyIsh-700'>
               <div className='flex gap-2 items-center'> 

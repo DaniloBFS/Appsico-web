@@ -3,7 +3,7 @@ import Registroform from "../Components/FormRegistro/FormRegistro.jsx";
 
 const Registro = () => {
     return (
-       <div className="flex w-full h-screen mt-20 mb-20" >
+       <div className="flex w-full h-screen my-32" >
             <div className="w-full flex items-center justify-center lg:w-1/2">
                 <Registroform />
             </div>

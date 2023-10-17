@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
     return (
-       <div className="bg-white px-10 py-20 rounded-[10px] border-2 bordeer-gray">
+       <div className="bg-white px-10 py-20 rounded-[10px] border-2 border-gray">
             <h1 className='text-5xl font-semibold'>Bem vindo de volta!</h1>
             <p className='font-medium text-lg text-gray-500 mt-4'>Bem vindo! Por favor insira suas credenciais</p>
             <div className='mt-8'>

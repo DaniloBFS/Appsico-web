@@ -1,5 +1,7 @@
 import React from 'react'
 import simple from '../../Assets/simple.png'
+import simple2 from '../../Assets/simple2.png'
+import simple3 from '../../Assets/simple3.png'
 
 const Value = () => {
   return (
@@ -29,32 +31,28 @@ const Value = () => {
         <div className='singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]'>
           <div className='flex items-center gap-3'>
             <div className='imgDiv p-[4px] rounded-[.8rem] bg-[#dedef8] h-[40px] w-[40px] flex items-center justify-center'>
-              <img src={simple} alt="" className='w-[70%]' />
+              <img src={simple2} alt="" className='w-[70%]' />
             </div>
             <span className='font-semibold text-textColor text-[18px]'>
-              Acolhimento
+             Comprometimento
             </span>
           </div>
           <p className='text-[13px] text-textColor opacity-[.7] py-[1rem]'>
-            Acolhimento é um dos mais importantes aspectos da mente. É o que
-            acontece quando a mente está em um estado de acordo com o seu
-            comportamento.
+          Tenha o suporte para manter a dedicação e a determinação alinhadas com seus objetivos e valores pessoais. Reforce sua seriedade e empenho em seguir seu caminho rumo à realização e ao sucesso na vida com comprometimento
           </p>
         </div>
 
         <div className='singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]'>
           <div className='flex items-center gap-3'>
             <div className='imgDiv p-[4px] rounded-[.8rem] bg-[#dedef8] h-[40px] w-[40px] flex items-center justify-center'>
-              <img src={simple} alt="" className='w-[70%]' />
+              <img src={simple3} alt="" className='w-[70%]' />
             </div>
             <span className='font-semibold text-textColor text-[18px]'>
-              Acolhimento
+              Profissionalismo
             </span>
           </div>
           <p className='text-[13px] text-textColor opacity-[.7] py-[1rem]'>
-            Acolhimento é um dos mais importantes aspectos da mente. É o que
-            acontece quando a mente está em um estado de acordo com o seu
-            comportamento.
+            Descubra nossa excepcional grade de psicólogos altamente qualificados, prontos para oferecer apoio emocional e orientação personalizada. Com profundo conhecimento e empatia, nossa classe de psicólogos está comprometida em ajudá-lo a alcançar bem-estar mental e equilíbrio emocional. Invista em seu crescimento pessoal com o suporte de profissionais dedicados à sua saúde mental.
           </p>
         </div>
 

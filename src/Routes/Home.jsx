@@ -10,7 +10,7 @@ const Home = () => {
     <div className='w-[85%] m-auto bg-white'>
       
       <Inicio />
-      <Search />
+      {/*<Search />*/}
       <Psicos />
       <Value />
 

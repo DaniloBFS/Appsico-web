@@ -39,7 +39,8 @@ const Data = [
 const Psicos = () => {
   return (
     <div>
-      <div className="jobContainer flex gap-12 justify-center flex-wrap items-center py-10 mx-8">
+      <div className="flex gap-10 justify-center flex-wrap items-center py-10 mx-8 font-bold text-xl"> Trabalhamos com três opções de atendimento:</div>
+      <div className="jobContainer flex gap-12 justify-center flex-wrap items-center mx-8">
         
 
        {
