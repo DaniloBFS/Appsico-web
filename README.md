@@ -1,3 +1,5 @@
+# Appsico
+
 Este projeto tem como objetivo o desenvolvimento de uma aplicação web com o intuito de conectar psicólogos com a população que os busca.
 
 Dentro do projeto, que ainda está em andamento, foram utilizadas tecnologias como:
