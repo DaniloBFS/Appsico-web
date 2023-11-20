@@ -1,8 +1,14 @@
-# React + Vite
+Este projeto tem como objetivo o desenvolvimento de uma aplicação web com o intuito de conectar psicólogos com a população que os busca.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dentro do projeto, que ainda está em andamento, foram utilizadas tecnologias como:
 
-Currently, two official plugins are available:
+- ReactJs
+- TailWindCss
+- ViteJS
+- Firebase
+- Git e Github
+- Vercel (Para a hospedagem do protótipo que está no endereço https://appsico.vercel.app)
+- Linguagens de marcação como HTML e CSS
+- QuantUX (Para a criação do modelo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo do projeto, de íncio, é ser uma plataforma filantropa. 
