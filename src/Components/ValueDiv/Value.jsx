@@ -2,6 +2,7 @@ import React from 'react'
 import simple from '../../Assets/simple.png'
 import simple2 from '../../Assets/simple2.png'
 import simple3 from '../../Assets/simple3.png'
+import { Link } from 'react-router-dom'
 
 const Value = () => {
   return (
@@ -66,7 +67,7 @@ const Value = () => {
         </div>
           
         <button className='border-[2px] rounded-[10px] py-[4px] px-[50px] text-[18px] font-semibold text-blueColor hover:bg-white border-blueColor'>
-            Comece Agora
+           <Link to="/Psicologos"> Comece Agora</Link>
         </button>
         
       </div>
