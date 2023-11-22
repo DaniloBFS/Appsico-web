@@ -46,22 +46,22 @@ export default function NavBar() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase"               onClick={() => setIsNavOpen(false)} >
               <Link to="/">
                 Home
               </Link>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-              <Link to="/Psicologos">
+              <li className="border-b border-gray-400 my-8 uppercase"               onClick={() => setIsNavOpen(false)} >
+              <Link to="/Psicologos"               onClick={() => setIsNavOpen(false)} >
                 Psicólogos
               </Link>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase"               onClick={() => setIsNavOpen(false)} >
               <Link to="/Login">
                 Login
               </Link>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-8 uppercase"               onClick={() => setIsNavOpen(false)} >
               <Link to="/Registro">
                 Registre-se
               </Link>

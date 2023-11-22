@@ -10,7 +10,7 @@ const Inicio = () => {
               </h1>
              
               <button className='border-[2px] rounded-[10px] py-[4px] px-[50px] text-[18px] font-semibold text-blueColor hover:bg-greyIsh border-blueColor'>
-                Comece Agora
+                <a href="/Psicologos"> Comece Agora</a>
               </button>
             </div>
             <div className="hidden relative lg:flex h-full w-1/2 items-center justify-center bg-white-200">
