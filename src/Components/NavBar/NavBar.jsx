@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react"; // import state
 import { Link } from 'react-router-dom'
+import AuthData from "../AuthData/AuthData";
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -90,6 +91,10 @@ export default function NavBar() {
             <Link to="/Registro">
              Registre-se
             </Link>
+          </li>
+
+          <li>
+                <AuthData />
           </li>
           
         </ul>

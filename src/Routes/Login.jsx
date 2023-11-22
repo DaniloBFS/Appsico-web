@@ -68,6 +68,7 @@ const signIn = () => {
                 </div>
             </div>
             </form>
+            
        </div>
     </div>
             
@@ -75,7 +76,9 @@ const signIn = () => {
                 <div className="w-60 h-60 bg-gradient-to-tr from-blue-500 to-violet-500 rounded-full animate-spin"/>
                 <div className="w-full h-1/2 absolute bottom-0 bg-white/10 backdrop-blur-lg" />
             </div>
+           
        </div>
+       
     )
   }
   
