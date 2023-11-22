@@ -2,12 +2,15 @@ import React from 'react'
 import { db } from "../../firebase";
 import { collection, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from "react";
+import { AiOutlineSearch } from 'react-icons/ai'
 //Em caso de ter um logo, o código abaixo vai importar de Assets e jogar no Array
 //import logo from '../../Assets/logo (1).png'
 
 const Especialidade = () => {
 
     const [psicologos, setPsicologos] = useState([]);
+    const [search, setSearch] = useState("");
+
     const psicologosCollectionRef = collection(db, "psicologos");
   
     useEffect(() => {
@@ -21,8 +24,36 @@ const Especialidade = () => {
   
     }, []);
 
+    const SearchPsi = (e) => {
+      e.preventDefault();
+      setPsicologos(psicologos.filter((psicologos) =>
+        psicologos.nome.toLowerCase().includes(search.toLowerCase()) ||
+        psicologos.abordagem.toLowerCase().includes(search.toLowerCase())
+
+      ));
+
+    };
+
   return (
     <div>
+        
+        <div className='searchDiv grid bg-greyIsh rounded-[10px] p-[2rem] py-12 my-12'>
+          <form onSubmit= {(e) => {SearchPsi(e)}} className=''>
+            <div className='firstDiv flex justify-between items-center rounded-[18px] gap[10px] bg-white p-4 shadow-lg shadow-greyIsh-700'>
+              <div className='flex gap-2 items-center'> 
+                <AiOutlineSearch className='text-[25px] icon' />
+                
+                <input onChange={(e)=>{setSearch(e.target.value)}}
+                
+                type="text" className='bg-transparent text-blue-500 focus:outline-none  w-[100%]' placeholder='Busque psicólogos...' />
+
+              </div>
+              <button type="submit" className='hidden lg:flex bg-blueColor h-full p-5 px-10 rounded-[10px] text-white cursor-pointer hover:bg-blue-300'>
+                Buscar
+              </button>
+            </div>
+          </form>
+        </div>
 
       <div className="jobContainer flex gap-12 justify-center flex-wrap items-center py-10 mx-8">
         
