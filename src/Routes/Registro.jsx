@@ -1,23 +1,42 @@
 import React from "react";
 import { useState } from "react";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const signUp = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [role, setRole] = useState("paciente");
+
+    const navigate = useNavigate();
+
+    const options = [
+        { value: 'paciente', label: 'Paciente' },
+        { value: 'psicologo', label: 'Psicologo' },
+      ]
 
     const signUp = (e) => {
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log(userCredential);
+                storeUserRole(userCredential.user.uid, role)
+                navigate("/");
             })
             .catch((error) => {
                 console.log(error);
             });  
     }; 
+
+    const storeUserRole = async (userUuid, userRole) => {
+        const storedUserRole = await addDoc(collection(db, "userRole"), {
+            uuid: userUuid,
+            role: userRole
+        })
+    }
 
 
     return (
@@ -54,8 +73,21 @@ const signUp = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
+                <div className="mt-4">
+                    <label className='text-lg font-medium '>Tipo</label>
+                    <select name="selectType" id="selectType"
+                        className='w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent'
+                        onChange={(e) => setRole(e.target.value)}
+                        value={role}
+                    >
+                        {
+                            options.map(item => <option key={item.value} value={item.value}>{item.label}</option>
+                            )
+                        }
+                    </select>
+                </div>
 
-                <div className='mt-8 flex justify-between items-center'>
+                {/* <div className='mt-8 flex justify-between items-center'>
                     <div>
                         <input 
                             type="checkbox" 
@@ -64,10 +96,10 @@ const signUp = () => {
                         <label className='ml-2 font-medium text-base' for="remember">Lembre-me</label>
                     </div>
                
-                </div>
+                </div> */}
                 <div className='mt-8 flex flex-col gap-y-4'>
                     <button className='active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl bg-blueColor text-white text-lg text font-bold'>Registrar</button>
-                    <button className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4  rounded-xl text-gray-700 font-semibold text-lg border-2 border-gray-100'>
+                    {/* <button className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4  rounded-xl text-gray-700 font-semibold text-lg border-2 border-gray-100'>
                     
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.26644 9.76453C6.19903 6.93863 8.85469 4.90909 12.0002 4.90909C13.6912 4.90909 15.2184 5.50909 16.4184 6.49091L19.9093 3C17.7821 1.14545 15.0548 0 12.0002 0C7.27031 0 3.19799 2.6983 1.24023 6.65002L5.26644 9.76453Z" fill="#EA4335"/>
@@ -77,7 +109,7 @@ const signUp = () => {
                     </svg>
 
                         Registrar-se com Google
-                    </button>
+                    </button> */}
                 </div>
             </div>
             </form>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { db } from "../../firebase";
 import { collection, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from "react";
@@ -10,35 +10,40 @@ const Especialidade = () => {
 
     const [psicologos, setPsicologos] = useState([]);
     const [search, setSearch] = useState("");
+    const [filteredPsicologos, setFilteredPsicologos] = useState([]);
 
     const psicologosCollectionRef = collection(db, "psicologos");
   
     useEffect(() => {
-  
-      const getPsicologos = async () => {
+      async function fetchPsicologos(){
         const data = await getDocs(psicologosCollectionRef);
         setPsicologos(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      };
-  
-      getPsicologos();
-  
+        console.log("teste")
+      }
+
+      fetchPsicologos();
+      console.log("leo")
     }, []);
 
-    const SearchPsi = (e) => {
-      e.preventDefault();
-      setPsicologos(psicologos.filter((psicologos) =>
-        psicologos.nome.toLowerCase().includes(search.toLowerCase()) ||
-        psicologos.abordagem.toLowerCase().includes(search.toLowerCase())
+    useEffect(() => {
+      SearchPsi(psicologos);
+    }, [search]);
 
-      ));
+    useEffect(() => {
+      setFilteredPsicologos(psicologos);
+    }, [psicologos]);
 
-    };
+    const SearchPsi = (psicologos) => {
+      setFilteredPsicologos(psicologos.filter((psico) => psico.nome.toLowerCase().includes(search.toLowerCase()) ||
+      psico.abordagem.toLowerCase().includes(search.toLowerCase())))
+
+      };
 
   return (
     <div>
         
         <div className='searchDiv grid bg-greyIsh rounded-[10px] p-[2rem] py-12 my-12'>
-          <form onSubmit= {(e) => {SearchPsi(e)}} className=''>
+          {/* <form onSubmit= {(e) => {SearchPsi(e)}} className=''>
             <div className='firstDiv flex justify-between items-center rounded-[18px] gap[10px] bg-white p-4 shadow-lg shadow-greyIsh-700'>
               <div className='flex gap-2 items-center'> 
                 <AiOutlineSearch className='text-[25px] icon' />
@@ -52,13 +57,24 @@ const Especialidade = () => {
                 Buscar
               </button>
             </div>
-          </form>
+          </form> */}
+          <div className='firstDiv flex justify-between items-center rounded-[18px] gap[10px] bg-white p-4 shadow-lg shadow-greyIsh-700'>
+              <div className='flex gap-2 items-center'> 
+                <AiOutlineSearch className='text-[25px] icon' />
+                
+                <input onChange={(e)=>{setSearch(e.target.value)}}
+                
+                type="text" className='bg-transparent text-blue-500 focus:outline-none  w-[100%]' placeholder='Busque psicólogos...' />
+
+              </div>
+            </div>
+          
         </div>
 
       <div className="jobContainer flex gap-12 justify-center flex-wrap items-center py-10 mx-8">
         
 
-       {psicologos.map(({id, nome, abordagem, convenio, descricao}) => {
+       {filteredPsicologos.map(({id, nome, abordagem, convenio, descricao}) => {
           return(
                 <div key={id} className="group group/item singleJob w-[250px] p-[20px] bg-white rounded-[10px] hover:bg-blueColor shadow-lg shadow-greyIsh-400/700 hover:shadow-lg cursor-pointer">
                   {" "}

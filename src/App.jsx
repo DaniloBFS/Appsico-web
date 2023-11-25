@@ -8,7 +8,7 @@ function App() {
     <div className='w-[85%] m-auto bg-white'>
       <NavBar />
       
-        <Outlet />
+      <Outlet />
      
       <Footer />
     </div>

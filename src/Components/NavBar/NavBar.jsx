@@ -1,10 +1,28 @@
-import React from 'react'
-import { useState } from "react"; // import state
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AuthData from "../AuthData/AuthData";
+import { auth } from "../../firebase";
+import { onAuthStateChanged } from 'firebase/auth';
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+  const [authUser, setAuthUser] = useState(null);
+
+  useEffect (() => {
+      const listen = onAuthStateChanged(auth, (user) => {
+          if (user) {
+              setAuthUser(user)
+              console.log(user);
+          } else {
+              setAuthUser(null);
+          }
+      })
+
+      return () => {
+          listen();
+      }
+  }, [])
 
   return (
     <div className="navBar flex justify-between items-center p-[2rem] mb-[1rem]">
@@ -83,18 +101,18 @@ export default function NavBar() {
           </Link>
           </li>
           <li>
-            <Link to="/Login">
+            {!authUser ? <Link to="/Login">
              Login
-            </Link>
+            </Link> : <></>}
           </li>
           <li>
-            <Link to="/Registro">
+            {!authUser ? <Link to="/Registro">
              Registre-se
-            </Link>
+            </Link> : <></>}
           </li>
 
           <li>
-                <AuthData />
+            <AuthData />
           </li>
           
         </ul>

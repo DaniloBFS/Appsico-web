@@ -10,6 +10,7 @@ const AuthData = () => {
         const listen = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setAuthUser(user)
+                console.log(user.email);
             } else {
                 setAuthUser(null);
             }
@@ -27,7 +28,13 @@ const AuthData = () => {
     }
 
     return (
-        <div>{ authUser ? <><p>{`Logado como ${authUser.email}`}</p><button onClick={userSignOut}>Sair da Conta</button></> : <p>Signed Out</p>}</div>
+        <>
+        { authUser ? 
+            <>
+                <button onClick={userSignOut}>Sair da Conta</button>
+            </> : 
+        <p></p>}
+        </>
     )
 }
 

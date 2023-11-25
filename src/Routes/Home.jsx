@@ -4,6 +4,7 @@ import Value from '../Components/ValueDiv/Value.jsx'
 import Inicio from '../Components/InicioDiv/InicioDiv.jsx'
 
 
+
 const Home = () => {
   return (
     <div className='w-[85%] m-auto bg-white'>
